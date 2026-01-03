@@ -1,0 +1,148 @@
+:root{
+  --bn-font: "Noto Sans Bengali", sans-serif;
+}
+
+body{
+  background:#222;
+  font-family: var(--bn-font);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:16px;
+  padding:20px;
+}
+
+#template{
+  width:1080px;
+  height:1350px;
+  background:#fff;
+  position:relative;
+  overflow:hidden;
+}
+
+/* ===== HEADER ===== */
+.header{
+  background:#000;
+  color:#fff;
+  padding:24px 32px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo img{
+  height:42px;
+  width:auto;
+  display:block;
+}
+
+.source{
+  font-family: var(--bn-font);
+  font-optical-sizing: auto;
+  font-weight: 500;        /* clearer than default */
+  font-style: normal;
+
+  font-size:18px;
+  opacity:.9;
+  text-align:right;
+}
+
+/* ===== HEADLINE ===== */
+.headline{
+  font-family: var(--bn-font);
+  font-optical-sizing: auto;
+  font-weight: 800;        /* 700–900 works nicely */
+  font-style: normal;
+
+  padding:36px 32px;
+  font-size:60px;
+  line-height:1.25;
+  color:#000;
+}
+
+/* Highlight styles */
+.hl-yellow{ background:yellow; padding:0 6px; border-radius:6px; }
+.hl-red{ color:#d40000; font-weight:900; }
+.hl-blue{ color:#0a2cff; font-weight:900; }
+
+/* ===== IMAGE AREA ===== */
+.image-box{
+  width:100%;
+  height:900px;
+  background:#0a2cff;
+  overflow:hidden;
+}
+
+.image-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  margin:0;
+  padding:0;
+  line-height:0;
+}
+
+.footer img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+
+/* ===== CONTROLS ===== */
+.controls{
+  width:1080px;
+  background:#111;
+  padding:16px;
+  border-radius:8px;
+  color:#fff;
+
+  font-family: var(--bn-font);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.controls textarea,
+.controls input,
+.controls button{
+  width:100%;
+  margin-top:8px;
+  padding:10px;
+  font-size:16px;
+  box-sizing:border-box;
+
+  font-family: var(--bn-font);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button{
+  background:#ff2b2b;
+  color:#fff;
+  border:none;
+  cursor:pointer;
+  font-weight:700;
+}
+
+button:disabled{
+  opacity:.7;
+  cursor:not-allowed;
+}
